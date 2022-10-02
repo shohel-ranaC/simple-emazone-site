@@ -1,5 +1,5 @@
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
+import firebase from "firebase/compat/app"
+import "firebase/compat/auth"
 import firebaseConfig from './firebase.config';
 import { useContext, useState } from 'react';
 import { UserContext } from '../../App';
@@ -131,6 +131,7 @@ function Login() {
         newUserInfo.success = true;
         setUser(newUserInfo);
         setLoggedInUser(newUserInfo);
+        
         console.log('sign in user info', res.user);
         })
         .catch((error) => {
